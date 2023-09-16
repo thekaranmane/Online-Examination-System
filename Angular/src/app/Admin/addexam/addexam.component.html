@@ -1,0 +1,18 @@
+<div class="bgimg">
+  
+<div class="addexam">
+    <h1 id="h1">Add Exam</h1>
+    <form action="" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Exam Name</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Exam Name" name="examname" [(ngModel)]="examname">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Exam Date</label>
+        <input type="date" class="form-control" id="formGroupExampleInput2" placeholder="Enter Exam Date" name="examdate" [(ngModel)]="examdate">
+      </div>
+      <button type="submit" class="btn btn-success btn">Add Exam</button>
+      <button type="reset" class="btn btn-warning" btn>Reset</button>
+  </form>
+    </div>
+</div>

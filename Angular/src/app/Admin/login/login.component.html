@@ -1,0 +1,21 @@
+<div class="bgimg">
+    <div class="login" >
+    
+        <h1 id="h1login">Login</h1>
+        <form action="" class="form p-2" (ngSubmit)="onSubmit()">
+            <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="username" required name="emailId" [(ngModel)]="username" >
+            <label for="floatingInput">username</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required name="password" [(ngModel)]="password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="col-12 mt-3  text-center">
+            
+            <button   type="submit" class=" btn btn-primary ">Sign in</button>
+            <input   class="btn btn-primary ms-3" type="reset" value="Reset">
+          </div>
+        </form>
+    </div>
+    </div>

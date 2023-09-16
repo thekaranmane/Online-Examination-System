@@ -1,0 +1,29 @@
+
+
+<table class="table" border="1px">
+    <thead>
+      <tr>
+        <th scope="col">Sr.no</th>
+        <th scope="col">Name of Exam</th>
+        <th scope="col">Date of Exam</th>
+        <th scope="col">Status</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let exam of ExamList index as i">
+        <th scope="row">
+          {{i+1}}
+        </th>
+        <td>{{exam.examname}}</td>
+        <td>{{exam.examdate}}</td>
+        <td>Active</td>
+        <td>
+          <button (click)="onStartExam(exam.exam_id)" class="btn btn-primary"
+          >Start Exam</button>
+        </td>
+        </tr>
+        
+     
+    </tbody>
+  </table>

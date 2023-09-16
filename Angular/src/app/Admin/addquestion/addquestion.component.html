@@ -1,0 +1,50 @@
+
+<div class="row justify-content-center" style="margin-top: 60px; box-shadow: steelblue; ">
+   <div class="col-4" style="box-shadow: 0 0 10px black;">
+    <h1 style="text-align: center;">Add Question</h1>
+<form action=""  (ngSubmit)="onSubmit()">
+    <label for="">Select Exam</label>
+    <select class="form-select" aria-label="Default select example" name="selectexam" [(ngModel)]="selectexam">
+        
+        <option *ngFor="let exam of ExamList" [value]="exam.exam_id">{{exam.examname}}</option>
+      </select>
+
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Question Name :</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Question 1" name="questionname" [(ngModel)]="questionname">
+      </div>
+
+      <div class="row">
+     
+        <div class="col-6">
+            <label for="exampleFormControlInput1" class="form-label">Option 1</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Option 1" name="option1" [(ngModel)]="option1">
+        </div>
+        <div class="col-6">
+            <label for="exampleFormControlInput1" class="form-label">Option 2</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Option 2" name="option2" [(ngModel)]="option2">
+        </div>
+        <div class="col-6">
+            <label for="exampleFormControlInput1" class="form-label">Option 3</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Option 3" name="option3" [(ngModel)]="option3">
+        </div>
+        <div class="col-6">
+            <label for="exampleFormControlInput1" class="form-label">Option 4</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Option 4" name="option4" [(ngModel)]="option4">
+        </div>
+
+        <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Correct Answer :</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Correct Answer" name="correctanswer" [(ngModel)]="correctanswer">   
+          </div>
+          <button type="submit" class="btn btn-primary">Save</button>
+          <button type="reset" class="btn btn-warning">Reset</button>
+
+        </div>
+      </form>
+      </div>
+
+
+
+   </div>
+

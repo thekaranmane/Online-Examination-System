@@ -1,0 +1,26 @@
+.addexam
+{
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 0 10px black;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+}
+#h1
+{
+    text-align: center;
+}
+.btn
+{
+    margin-left: 100px;
+ 
+}
+.bgimg
+{
+padding: 150px;
+background-image: url(./../../../assets/addexam.jpg);
+background-position: center;
+background-size: cover;
+}
